@@ -5,15 +5,16 @@
       <div class="logo">
          <img class="yt-logo" src="src/assets/yt_logo_rgb_light.png" alt="YT-Logo" />
          <div class="icons">
+            <i class="fab fa-chromecast"></i>
             <i class="far fa-bell"></i>
-            <object data="https://fonts.gstatic.com/s/i/materialiconsoutlined/search/v15/24px.svg" width="30%"></object>
+            <object data="https://fonts.gstatic.com/s/i/materialiconsoutlined/search/v15/24px.svg" ></object>
             <img src="src/assets/hero.png" width="50" alt="profile" />
          </div>
       </div>
       <div class="menu">
          <span>
             <i class="far fa-compass"></i>
-            Explore
+            Eksplorasi
          </span>
          <template v-for="explore in explores" :key="explore">
             <span @click="setCurrent(explore)" :class="explore === itemActive ? 'active' : ''">
@@ -35,7 +36,8 @@
             explores: [
                'Semua',
                'Live',
-               'video mix',
+               'Kartun',
+               'Video mix',
                'Entertainment',
                'Music',
                'Sports',
@@ -81,7 +83,7 @@
             }
             
             .icons {
-               width: 30%;
+               width: 50%;
                height: 20px;
                display: flex;
                justify-content: space-between;
@@ -92,27 +94,27 @@
                }
                
                i {
-                  width: 5px!important;
-                  margin-right: 2rem;
-                  &:first-child {
+                  margin-right: 1rem;
+                  font-size: 1.2rem;
+                  &:nth-child(2) {
                      position: relative;
                      &::after {
                         display: block;
                         content: '9+';
                         color: white;
                         border-radius: 50%;
-                        font-size: .65rem;
+                        font-size: .6rem;
                         padding: .2rem;
                         background: #e02d2d;
                         position: absolute;
                         top: -5px;
-                        right: -24px;
+                        right: -10px;
                      }
                   }
                }
                
                img {
-                  width: 30%;
+                  width: 20%;
                   background: white;
                   border-radius: 50%;
                   border: 2px solid whitesmoke;
@@ -141,7 +143,7 @@
                display: flex;
                align-items: center;
                border-radius: 16px;;
-               padding: .3rem .4rem;
+               padding: .1rem .5rem;
                margin-right: .5rem;
                background: $primary-light;
                color: $secondary-light;
@@ -160,6 +162,7 @@
                   
                   i {
                      margin-right: .45rem;
+                     font-size: 1.5em;
                   }
                   
                   &::after {
@@ -169,8 +172,8 @@
                      right: -.65rem;
                      top: 0;
                      height: 100%;
-                     width: 1px;
-                     background: $secondary-light;
+                     width: 3px;
+                     background: $primary-light;
                   }
                }
             }

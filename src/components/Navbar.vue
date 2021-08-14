@@ -27,10 +27,7 @@
 <script>
    
    export default {
-      name: 'YTNavbar',
-      data() {
-         return { }
-      }
+      name: 'YTNavbar'
    }
    
 </script>
@@ -45,6 +42,8 @@
       bottom: 0;
       display: flex;
       justify-content: space-between;
+      border-top: 2px solid $primary-light;
+      padding-top: .5rem;
       
       span {
          display: flex;
@@ -52,10 +51,11 @@
          justify-content: center;
          align-items: center;
          flex-direction: column;
-         margin-bottom: .75rem;
+         margin-bottom: .5rem;
          
          object {
             width: 25px;
+            margin-bottom: .25rem;
          }
          
          small {
