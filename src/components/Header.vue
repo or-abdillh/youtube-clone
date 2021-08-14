@@ -73,12 +73,11 @@
             justify-content: space-between;
             align-items: center;
             padding: 0 0 .8rem;
-            border-bottom: 2px solid $primary-light;
+            border-bottom: 2.5px solid $primary-light;
             
             .yt-logo {
                display: block;
-               width: 110px;
-               height: 28px;
+               height: 20px;
             }
             
             .icons {
@@ -89,9 +88,10 @@
                align-items: center;
                
                i {
+                  width: 10%;
                   &:first-child {
-                     
                      position: relative;
+                     margin-right: 1.2rem;
                      &::after {
                         display: block;
                         content: '9+';
@@ -101,8 +101,8 @@
                         padding: .2rem;
                         background: #e02d2d;
                         position: absolute;
-                        top: -8px;
-                        right: -8px;
+                        top: -5px;
+                        right: -16px;
                      }
                   }
                }
@@ -134,7 +134,7 @@
             
             span {
                font-size: 1rem;
-               border-radius: 12px;
+               border-radius: 16px;
                padding: .4rem .5rem;
                margin-right: .5rem;
                background: $primary-light;
