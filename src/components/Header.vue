@@ -87,22 +87,26 @@
                justify-content: space-between;
                align-items: center;
                
+               object {
+                  margin-right: 1rem;
+               }
+               
                i {
-                  width: 10%;
+                  width: 5px!important;
+                  margin-right: 2rem;
                   &:first-child {
                      position: relative;
-                     margin-right: 1.2rem;
                      &::after {
                         display: block;
                         content: '9+';
                         color: white;
                         border-radius: 50%;
-                        font-size: .7rem;
+                        font-size: .65rem;
                         padding: .2rem;
                         background: #e02d2d;
                         position: absolute;
                         top: -5px;
-                        right: -16px;
+                        right: -24px;
                      }
                   }
                }
@@ -133,9 +137,11 @@
             }
             
             span {
-               font-size: 1rem;
-               border-radius: 16px;
-               padding: .4rem .5rem;
+               font-size: .85rem;
+               display: flex;
+               align-items: center;
+               border-radius: 16px;;
+               padding: .3rem .4rem;
                margin-right: .5rem;
                background: $primary-light;
                color: $secondary-light;
@@ -151,6 +157,10 @@
                   position: relative;
                   border-radius: 0;
                   border: none;
+                  
+                  i {
+                     margin-right: .45rem;
+                  }
                   
                   &::after {
                      display: block;
