@@ -1,7 +1,7 @@
 <template>
    <section class="card-video">
       <div class="thumb">
-         <img src="src/assets/thumb.png" />
+         <img :src="srcThumb" />
          <span class="minutes">10:21</span>
       </div>
       <div class="info">
@@ -10,11 +10,11 @@
          </span>
          <span>
             <p class="title">
-               FULL Tutorial Cloning Youtube UI Using Vue JS and SASS | or-abdillh
+               {{ title }}
                <object data="https://fonts.gstatic.com/s/i/materialiconsoutlined/more_vert/v17/24px.svg" type=""></object>
             </p>
             <p class="subtitle">
-               or-abdillh 65rbx ditonton 4 hari yang lalu
+               {{ subtitle }}
             </p>
          </span>
       </div>
@@ -23,7 +23,13 @@
 
 <script>
    export default {
-      name: 'CardVideo'
+      name: 'CardVideo',
+      inheritAttrs: false,
+      props: {
+         title: String,
+         subtitle: String,
+         srcThumb: String
+      }
    }
 </script>
 
