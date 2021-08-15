@@ -63,7 +63,6 @@
       padding: 0;
       
       .header {
-         padding: 1.5rem 1rem 0;
          
          .logo {
             background: white;
@@ -71,7 +70,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 0 .8rem;
+            padding: 1.5rem 1rem;
             border-bottom: 2.5px solid $primary-light;
             
             .yt-logo {
@@ -152,6 +151,7 @@
                   color: black;
                   background: $primary-light;
                   margin-right: 1.5rem;
+                  margin-left: 1rem;
                   padding: .5rem .75rem;
                   position: relative;
                   border-radius: 0;
