@@ -1,5 +1,4 @@
 <template>
-   
    <!-- HEADER -->
    <section class="header" >
       <div class="logo">
@@ -22,13 +21,11 @@
             </span>            
          </template>
       </div>
-      
    </section>
-   
 </template>
 
 <script>
-   
+ 
    export default {
       name: 'YTHeader',
       data() {
@@ -66,7 +63,7 @@
       padding: 0;
       
       .header {
-         padding: 1.5rem 1rem;
+         padding: 1.5rem 1rem 0;
          
          .logo {
             background: white;

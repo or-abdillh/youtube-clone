@@ -42,8 +42,9 @@
       bottom: 0;
       display: flex;
       justify-content: space-between;
-      border-top: 2px solid $primary-light;
+      border-top: 1px solid $secondary-light;
       padding-top: .5rem;
+      background: white;
       
       span {
          display: flex;
