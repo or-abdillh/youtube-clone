@@ -1,6 +1,10 @@
 <template>
    <YTHeader></YTHeader>
+   <div 
+   v-for="video in videos" :key="video"
+   class="video-container">
       <CardVideo></CardVideo>
+   </div>
    <YTNavbar></YTNavbar>
 </template>
 
@@ -15,6 +19,18 @@
          'YTHeader': YTHeader,
          'YTNavbar': YTNavbar,
          'CardVideo': CardVideo
+      },
+      data() {
+         return {
+            videos: [1,2,3,4,5]
+         }
       }
    }
 </script>
+
+<style lang="scss">
+   .video-container {
+      
+   }
+</style>
+

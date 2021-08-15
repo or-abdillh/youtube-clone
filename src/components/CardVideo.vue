@@ -35,7 +35,7 @@
       width: 100%;
       margin-top: 1rem;
       margin-bottom: 1.5rem;
-      border-bottom: 5px solid $secondary-light;
+      border-bottom: 5px solid $primary-light;
       
       .thumb {
          position: relative;
