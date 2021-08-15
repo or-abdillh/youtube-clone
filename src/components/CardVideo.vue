@@ -40,7 +40,7 @@
    .card-video {
       width: 100%;
       margin-top: 1rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: .75rem;
       border-bottom: 5px solid $primary-light;
       
       .thumb {

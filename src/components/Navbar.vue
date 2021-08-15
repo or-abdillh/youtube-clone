@@ -6,7 +6,7 @@
          <small>Home</small>
       </span>
       <span>
-         <object data="https://fonts.gstatic.com/s/i/materialiconsoutlined/smart_display/v8/24px.svg"></object>
+         <object data="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/youtube-shorts.png"></object>
          <small>Shorts</small>
       </span>
       <span>
@@ -18,7 +18,7 @@
       </span>
       <span>
          <object data="https://fonts.gstatic.com/s/i/materialiconsoutlined/video_library/v12/24px.svg"></object>
-         <small>Collections</small>
+         <small>Koleksi</small>
       </span>
    </section>
    
@@ -63,6 +63,11 @@
             font-size: .6rem;
          }
          
+         &:nth-child(2) {
+            object {
+               width: 20px;
+            }
+         }
          &:nth-child(3) {
             object {
                width: 40px;
