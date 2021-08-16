@@ -1,6 +1,6 @@
 <template>
    <!-- HEADER -->
-   <section class="header" >
+   <section class="header">
       <div class="logo">
          <img class="yt-logo" src="src/assets/yt_logo_rgb_light.png" alt="YT-Logo" />
          <div class="icons">
@@ -28,6 +28,13 @@
  
    export default {
       name: 'YTHeader',
+      props: {
+         darkMode: {
+            required: true,
+            type: Boolean,
+            default: true
+         }
+      },
       data() {
          return {
             explores: [
@@ -55,6 +62,7 @@
 <style lang="scss">
    
    @import "src/style/variabel.scss";
+   @import "src/style/ClassMode.scss";
    
    #app {
       font-size: 24px;
@@ -63,9 +71,9 @@
       padding: 0;
       
       .header {
+         background: white;
          
          .logo {
-            background: white;
             margin-bottom: .2rem;
             display: flex;
             justify-content: space-between;

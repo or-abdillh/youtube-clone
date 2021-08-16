@@ -1,6 +1,8 @@
 <template>
-   <DarkMode></DarkMode>
-   <YTHeader></YTHeader>
+
+   <DarkMode
+   v-on:change-mode="setMode"></DarkMode>
+   <YTHeader :dark-mode="isLight"></YTHeader>
    <CardVideo
    :title="info.titleVideo"
    :subtitle="info.subTitleVideo"
@@ -45,7 +47,13 @@
                titleVideo: 'FULL Tutorial Cloning Youtube UI Using Vue JS and SASS | or-abdillh',
                subTitleVideo: 'or-abdillh • 65rbx ditonton • 4 hari yang lalu',
                thumb: 'src/assets/thumb.png'
-            }
+            },
+            isLight: true
+         }
+      },
+      methods: {
+         setMode() {
+            this.isLight = !this.isLight
          }
       }
    }

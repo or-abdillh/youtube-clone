@@ -1,10 +1,12 @@
 <template>
-   <span :class="isLight ? 'bg-dark' : 'bg-light'" class="toogle">
+   <span 
+   v-on:click="$emit('change-mode')"
+   :class="isLight ? 'bg-dark' : 'bg-light'" class="toogle">
       <i 
-      @click="[changeMode, $emit(change-mode, 'dark')]" 
+      @click="changeMode" 
        v-if="isLight === false" class="fas fa-moon" ></i>
       <i 
-      @click="[changeMode, $emit(change-mode, 'light')]" 
+      @click="changeMode" 
        v-else class="fas fa-sun" ></i>
    </span>
 </template>

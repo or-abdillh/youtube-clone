@@ -1,0 +1,16 @@
+{
+	"name": "Youtube Clone",
+	"short_name": "YT Clone",
+	"start_url": "index.html",
+	"orientation": "potrait",
+	"display": "standalone",
+	"background": "#FFFFFF",
+	"theme_color": "#FFFFFF",
+	"icons": [
+		{
+			"src": "./src/assets/youtube.png",
+			"type": "image/png",
+			"sizes": "72x72"
+		}
+	]
+}
