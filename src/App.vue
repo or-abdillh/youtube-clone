@@ -1,4 +1,5 @@
 <template>
+   <DarkMode></DarkMode>
    <YTHeader></YTHeader>
    <CardVideo
    :title="info.titleVideo"
@@ -27,13 +28,15 @@
    import YTNavbar from './components/Navbar.vue';
    import CardVideo from './components/CardVideo.vue';
    import Shorts from './components/Shorts.vue';
+   import DarkModeToggle from './components/DarkModeToggle.vue';
    
    export default {
       components: {
          'YTHeader': YTHeader,
          'YTNavbar': YTNavbar,
          'CardVideo': CardVideo,
-         'Shorts': Shorts
+         'Shorts': Shorts,
+         'DarkMode': DarkModeToggle
       },
       data() {
          return {
