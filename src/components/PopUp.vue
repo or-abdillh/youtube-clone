@@ -1,7 +1,7 @@
 <template>
    <section v-if="showModal" class="layer">
       <div class="modal">
-         <i class="fa fa-times"></i>
+         <i @click="closeBtn" class="fa fa-times"></i>
          <slot name="header"></slot>
          <slot></slot>
          <slot name="footer"></slot>
@@ -11,10 +11,25 @@
 
 <script>
    export default {
-      name: 'PopUp',
+      name: "PopUp",
       data() {
          return {
             showModal: true
+         }
+      },
+      props: {
+         isShow: Boolean
+      },
+      watch: {
+         isShow(value) {
+            this.showModal = !this.showModal;
+         }
+      },
+      methods: {
+         closeBtn() {
+            setTimeout(()=> {
+               this.showModal = !this.showModal;
+            }, 300);
          }
       }
    }
