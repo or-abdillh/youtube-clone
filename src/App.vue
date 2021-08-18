@@ -1,7 +1,14 @@
 <template>
-
-   <DarkMode
-   v-on:change-mode="setMode"></DarkMode>
+   <PopUp>
+      <template v-slot:header>
+         <img src="src/assets/hero.png" />
+      </template>
+      <p>OKA R ABDILLAH</p>
+      <template v-slot:footer>
+         <small>Junior Front End Developer</small>
+      </template>
+   </PopUp>
+   
    <YTHeader :dark-mode="isLight"></YTHeader>
    <CardVideo
    :title="info.titleVideo"
@@ -9,9 +16,7 @@
    :src-thumb="info.thumb">
    </CardVideo>
    <!-- Shorts video wrapper -->
-   <Shorts>
-      
-   </Shorts>
+   <Shorts></Shorts>
    <div 
    v-for="video in videos" :key="video"
    class="video-container">
@@ -31,6 +36,7 @@
    import CardVideo from './components/CardVideo.vue';
    import Shorts from './components/Shorts.vue';
    import DarkModeToggle from './components/DarkModeToggle.vue';
+   import PopUp from './components/PopUp.vue';
    
    export default {
       components: {
@@ -38,7 +44,8 @@
          'YTNavbar': YTNavbar,
          'CardVideo': CardVideo,
          'Shorts': Shorts,
-         'DarkMode': DarkModeToggle
+         'DarkMode': DarkModeToggle,
+         'PopUp': PopUp
       },
       data() {
          return {
