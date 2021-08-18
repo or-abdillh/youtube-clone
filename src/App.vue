@@ -1,5 +1,7 @@
 <template>
-   <PopUp>
+   <PopUp 
+   v-on:close-modal="showModal = !showModal"
+   :isShow="showModal">
       <template v-slot:header>
          <img src="src/assets/hero.png" />
       </template>
@@ -9,7 +11,10 @@
       </template>
    </PopUp>
    
-   <YTHeader :dark-mode="isLight"></YTHeader>
+   <YTHeader
+   v-on:popup-click="showModal = true">
+   </YTHeader>
+   
    <CardVideo
    :title="info.titleVideo"
    :subtitle="info.subTitleVideo"
@@ -55,7 +60,7 @@
                subTitleVideo: 'or-abdillh • 65rbx ditonton • 4 hari yang lalu',
                thumb: 'src/assets/thumb.png'
             },
-            isLight: true
+            showModal: false
          }
       },
       methods: {

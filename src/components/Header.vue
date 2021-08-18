@@ -7,7 +7,9 @@
             <i class="fab fa-chromecast"></i>
             <i class="far fa-bell"></i>
             <object data="https://fonts.gstatic.com/s/i/materialiconsoutlined/search/v15/24px.svg" ></object>
-            <img src="src/assets/hero.png" width="50" alt="profile" />
+            <img
+            @click="$emit('popup-click')"
+            src="src/assets/hero.png" width="50" alt="profile" />
          </div>
       </div>
       <div class="menu">
